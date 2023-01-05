@@ -475,6 +475,7 @@ class StatusChange:
         self.object_label = data.get("objectLabel")
         self.event_id = data.get("eventId")
         self.extra_data = data.get("extraData")
+        self.holdtoken = data.get('holdToken')
         self.origin = StatusChangeOrigin(data['origin'])
         self.is_present_on_chart = data.get("isPresentOnChart")
         self.not_present_on_chart_reason = data.get("notPresentOnChartReason")
